@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Group Chat</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img src="chat-icon.png" alt="I-Chat Icon" width="50" height="50" />
+
+    <h1>Welcome to the I-Chat</h1>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button id="joinButton">Join</button>
+    <div id="chatContainer" style="display: none;">
+      <div id="messages"></div>
+    
+    </div>
+   
+  </div>
+  <div>
+    <input type="text" id="messageInput" placeholder="Type your message" style="width: 43%; display: none;">
+    <button id="sendButton" style="display: none;">Send</button>
+</div>
+  
+  <audio id="messageSound">
+  <source src="notification.mp3" type="audio/mpeg">
+  
+</audio>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="chat.js"></script>
+
+</body>
+</html>
